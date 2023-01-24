@@ -1,0 +1,29 @@
+<odoo>
+
+    <record id="esp8266_example_form" model="ir.ui.view">
+        <field name="name">esp8266.example.form</field>
+        <field name="model">esp8266.example</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="display_text"/>
+                        <field name="is_led"/>
+                        <field name="is_button"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+    <record id="esp8266_example_action" model="ir.actions.act_window">
+        <field name="name">ESP8266 Examples</field>
+        <field name="res_model">esp8266.example</field>
+        <field name="view_mode">tree,form</field>
+        <field name="type">ir.actions.act_window</field>
+    </record>
+
+
+    <menuitem id="main_esp8266_example_menu" name="ESP8266 Examples" action="esp8266_example_action"/>
+</odoo>

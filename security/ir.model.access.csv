@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+iot_example.access_esp8266_example,access_esp8266_example,iot_example.model_esp8266_example,base.group_user,1,1,1,1
